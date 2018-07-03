@@ -17,7 +17,6 @@
 package nz.co.lolnet.commandscheduler;
 
 import com.google.inject.Inject;
-import ninja.leaping.configurate.objectmapping.GuiceObjectMapperFactory;
 import nz.co.lolnet.commandscheduler.commands.CSCommand;
 import nz.co.lolnet.commandscheduler.configuration.Config;
 import nz.co.lolnet.commandscheduler.configuration.Configuration;
@@ -59,9 +58,6 @@ public class CommandScheduler {
     @Inject
     @DefaultConfig(sharedRoot = true)
     private Path path;
-    
-    @Inject
-    private GuiceObjectMapperFactory factory;
     
     private Configuration configuration;
     
@@ -112,10 +108,6 @@ public class CommandScheduler {
     
     public Path getPath() {
         return path;
-    }
-    
-    public GuiceObjectMapperFactory getFactory() {
-        return factory;
     }
     
     public Configuration getConfiguration() {
