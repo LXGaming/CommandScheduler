@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 lolnet.co.nz
+ * Copyright 2018 Alex Thomson
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nz.co.lolnet.commandscheduler.util;
+package io.github.lxgaming.commandscheduler.util;
 
 import org.apache.commons.lang3.StringUtils;
 import org.spongepowered.api.text.Text;

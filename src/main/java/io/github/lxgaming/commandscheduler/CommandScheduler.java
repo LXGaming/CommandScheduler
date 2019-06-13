@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 lolnet.co.nz
+ * Copyright 2018 Alex Thomson
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package nz.co.lolnet.commandscheduler;
+package io.github.lxgaming.commandscheduler;
 
 import com.google.inject.Inject;
-import nz.co.lolnet.commandscheduler.commands.CSCommand;
-import nz.co.lolnet.commandscheduler.configuration.Config;
-import nz.co.lolnet.commandscheduler.configuration.Configuration;
-import nz.co.lolnet.commandscheduler.listeners.CSListener;
-import nz.co.lolnet.commandscheduler.managers.CommandManager;
-import nz.co.lolnet.commandscheduler.util.Reference;
+import io.github.lxgaming.commandscheduler.commands.CSCommand;
+import io.github.lxgaming.commandscheduler.configuration.Config;
+import io.github.lxgaming.commandscheduler.configuration.Configuration;
+import io.github.lxgaming.commandscheduler.listeners.CSListener;
+import io.github.lxgaming.commandscheduler.managers.CommandManager;
+import io.github.lxgaming.commandscheduler.util.Reference;
 import org.slf4j.Logger;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.config.DefaultConfig;

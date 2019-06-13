@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 lolnet.co.nz
+ * Copyright 2018 Alex Thomson
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,26 @@
  * limitations under the License.
  */
 
-package nz.co.lolnet.commandscheduler.commands;
+package io.github.lxgaming.commandscheduler.commands;
 
-import nz.co.lolnet.commandscheduler.util.Toolbox;
 import org.spongepowered.api.command.CommandResult;
 import org.spongepowered.api.command.CommandSource;
 
 import java.util.List;
 
-public class InfoCommand extends AbstractCommand {
+public class CSCommand extends AbstractCommand {
     
-    public InfoCommand() {
-        addAlias("info");
-        addAlias("information");
-        addAlias("version");
+    public CSCommand() {
+        addAlias("commandscheduler");
+        addAlias("cs");
+        addChild(HelpCommand.class);
+        addChild(InfoCommand.class);
+        addChild(ReloadCommand.class);
     }
     
     @Override
     public CommandResult execute(CommandSource commandSource, List<String> arguments) {
-        commandSource.sendMessage(Toolbox.getPluginInformation());
+        getHelp(commandSource).ifPresent(commandSource::sendMessage);
         return CommandResult.success();
     }
 }
