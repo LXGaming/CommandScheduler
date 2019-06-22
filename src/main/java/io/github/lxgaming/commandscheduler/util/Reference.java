@@ -23,6 +23,6 @@ public class Reference {
     public static final String PLUGIN_VERSION = "1.0.0";
     public static final String DESCRIPTION = "Command Scheduler";
     public static final String AUTHORS = "LX_Gaming";
-    public static final String SOURCE = "https://github.com/LXGaming/CommandScheduler/";
+    public static final String SOURCE = "https://github.com/LXGaming/CommandScheduler";
     public static final String WEBSITE = "https://lxgaming.github.io/";
 }
